@@ -1,0 +1,19 @@
+/*Write and execute a C/C++ Program (factors.cpp/factors.c) to display the factors of an integer input by the user.
+Assume that you are given integer on terminal, print the factors space separated on the terminal.*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, i;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    cout << "Factors of " << n << " are: ";  
+    for(i = 1; i <= n; ++i) {
+        if(n % i == 0)
+            cout << i << " ";
+    }
+
+    return 0;
+}
